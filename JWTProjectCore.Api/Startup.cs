@@ -54,9 +54,9 @@ namespace JWTProjectCore.Api
 
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint($"/swagger/v1/swagger.json", "Api JWT");
+                c.SwaggerEndpoint($"./swagger/v1/swagger.json", "Api JWT");
                 c.DocumentTitle = "API Orix - JWT";
-                c.RoutePrefix = string.Empty;
+                c.RoutePrefix = "jwt-api/api-docs";
             });
         }
     }
